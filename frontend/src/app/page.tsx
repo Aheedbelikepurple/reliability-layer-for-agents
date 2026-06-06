@@ -562,6 +562,13 @@ export default function Dashboard() {
             >
               INITIALIZE OPERATOR SESSION →
             </button>
+
+            <a 
+              href="/animation"
+              className="w-full text-center py-3 border border-orange-brand/30 bg-[#FF571A]/5 hover:bg-[#FF571A]/10 text-orange-brand font-extrabold font-mono text-[10px] uppercase tracking-widest rounded transition-all shadow-md active:scale-[0.98] cursor-pointer flex items-center justify-center gap-2"
+            >
+              <span>📽️ WATCH CINEMATIC DEMO</span>
+            </a>
           </form>
 
           <div className="mt-8 border-t border-[#1F2124] pt-4 text-center">
@@ -681,6 +688,13 @@ export default function Dashboard() {
 
         {/* System telemetry & log out */}
         <div className="flex items-center gap-4 text-[9px] font-mono">
+          <a 
+            href="/animation"
+            className="flex items-center gap-1.5 px-3 py-1 bg-orange-brand/10 hover:bg-orange-brand/20 border border-orange-brand/35 text-orange-brand rounded uppercase font-bold text-[9px] font-mono cursor-pointer transition-colors"
+          >
+            <span>📽️ Cinematic Demo</span>
+          </a>
+
           <div className="hidden sm:flex items-center gap-1.5">
             <span className={`h-1.5 w-1.5 rounded-full ${isBackendOnline ? 'bg-orange-brand animate-pulse' : 'bg-red-500'}`} />
             <span className="text-zinc-400">STATUS: <span className="text-white font-bold">{isBackendOnline ? 'ACTIVE' : 'OFFLINE'}</span></span>
